@@ -19,6 +19,37 @@ for L in List:
     itereted_items.append(L)
 print(Count_List)
 
+ 
+# while True:
+#     numero_page = int(input("Enter le numero de la page : "))
+#     page1 = utilisateurs[0:2]
+#     page2 = utilisateurs[2:]
+
+#     if numero_page == 1:
+#         print(page1)
+#     elif numero_page == 2:
+#         print(page2)
+#     else:
+#         print("page not found")
+#         break
+
+
+
+taille_page = 2
+
+while True:
+    page = int(input("Etrer le numero de la page : "))
+    debut = (page - 1) * taille_page
+    fin = debut + taille_page
+    if page == 1 or page == 2:     
+        print(utilisateurs[debut:fin])
+    else:
+        print("page not found!")
+        break
+
+
+
+
 
 
 
