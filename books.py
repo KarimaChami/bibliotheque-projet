@@ -30,7 +30,7 @@ print(Count_List)
 #     elif numero_page == 2:
 #         print(page2)
 #     else:
-#         print("page not found")
+#         print("page not found!")
 #         break
 
 
@@ -41,7 +41,7 @@ while True:
     page = int(input("Etrer le numero de la page : "))
     debut = (page - 1) * taille_page
     fin = debut + taille_page
-    if page == 1 or page == 2:     
+    if page == 1 or page == 2:          
         print(utilisateurs[debut:fin])
     else:
         print("page not found!")
